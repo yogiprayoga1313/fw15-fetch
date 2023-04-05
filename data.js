@@ -16,8 +16,10 @@ fetch(endPoint)
 </tr></thead>
 <tbody class="gap-3 bg-blue-200 gap-12 self-center">`
 
+
         data.forEach(element => {
             // console.log(element)
+            // ${} template literals
             dataTable += `<tr>
     <td class="font-semibold pl-[15px]">${element.id}</td>
     <td>${element.name}</td>
@@ -33,5 +35,5 @@ fetch(endPoint)
         dataTable += '</tbody>'
         console.log(dataTable)
         document.getElementById('user').innerHTML = dataTable
-
+        // Menggunakan property innerHTML untuk mengubah isi dari elemen HTML dengan nilai dari variabel dataTable.
     })
